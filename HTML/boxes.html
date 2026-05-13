@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+        body {
+            height: 1500px;
+            position: relative;
+            border: 1px solid;
+        }
+
+        #boxcontainer {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            justify-content: center;
+            column-gap: 150px;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        #first {
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            opacity: 1;
+            border-radius: 2px;
+        }
+
+        #second {
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+            opacity: 1;
+            border-radius: 2px;
+
+
+        }
+
+        #third {
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            opacity: 1;
+            border-radius: 2px;
+
+
+        }
+
+        #four {
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            opacity: 1;
+            border-radius: 2px;
+
+
+        }
+
+        #five {
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            background-color: goldenrod;
+            opacity: 1;
+            border-radius: 2px;
+
+
+        }
+
+        #six {
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            background-color: black;
+            opacity: 1;
+            border-radius: 4px;
+
+
+        }
+
+        .firstgroup {
+            animation: first 3s ease-in;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes first {
+
+            0% {
+                transform: translateX(-250px);
+
+            }
+        }
+
+
+        .thirdgroup {
+            animation: third 3s ease-in-out;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes third {
+
+
+            0% {
+                transform: translateX(250px);
+
+            }
+        }
+
+        .third {
+            animation: up 3s ease-in-out;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes up {
+            0% {
+                transform: rotateX(180deg);
+
+            }
+
+
+        }
+
+        .second {
+            animation: down 3s ease-in-out;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes down {
+
+
+            0% {
+                transform: rotateX(180deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="boxcontainer">
+        <div class="firstgroup">
+            <h1 id="first" class="boxitems left"></h1>
+            <h1 id="four" class="boxitems left"></h1>
+        </div>
+        <div class="secondgroup">
+            <h1 id="second" class="boxitems center"></h1>
+            <h1 id="third" class="boxitems center"></h1>
+        </div>
+        <div id="thirdgroup">
+            <h1 id="five" class="boxitems right"></h1>
+            <h1 id="six" class="boxitems right"></h1>
+        </div>
+    </div>
+
+
+    <script src="./boxes.js"></script>
+</body>
+
+</html>

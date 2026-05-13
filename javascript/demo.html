@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./demo.css">
+</head>
+
+<body>
+    <div style="height:300px; display:flex; justify-content:center; align-items:center;">
+        <div class="clock-container">
+
+            <img src="../Image/image3.png" id="clockimg">
+
+
+            <div class="hand hour" id="hourhand"></div>
+            <div class="hand minute" id="minutehand"></div>
+            <div class="hand second" id="secondhand"></div>
+
+
+            <div class="center-pin"></div>
+        </div>
+    </div>
+
+    <p id="pcv">liove</p>
+    <button id="butts">loud</button>
+
+
+    <div>
+        <h1 id="time" style="font-size: 50px;">00:00:00 <span>Am</span></h1>
+    </div>
+
+    <h1 id="loop"></h1>
+    <!-- <h1 id="demo">HELLO WORLD</h1> -->
+    <img src="../Image/aston villa.png" alt="" id="img">
+
+    <button onclick="rename()">Click me</button>
+    <button onclick="name2()"> click me again</button>
+
+
+
+    <!-- <h1 class="head"></h1>
+    <h1 class="head2"></h1>
+ -->
+
+
+
+    <div class="bulb-wrapper">
+        <div class="hook"></div>
+        <div class="neck"></div>
+        <div class="body"></div>
+        <div class="glass"></div>
+        <div id="btn2">
+            <button id="on" onclick="bulbOn()">bulb on</button>
+            <button id="off" onclick="bulboff()">bulb off</button>
+        </div>
+    </div>
+
+
+    <div>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <p id="p"></p>
+        <span id="likes"> <span class="likes"></span></span>
+    </div>
+
+    <div id="div">
+    </div>
+    <div>
+        <h2>Student Information</h2>
+
+        <!-- <label for="firstname">Firstname</label>
+        <input type="text" id="firstname" value="firstval" placeholder="Enter first name">
+
+        <label for="lastname">lastname</label>
+        <input type="text" id="lastname" placeholder="Enter last name">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder=" Enter age">
+
+        <label for="course">course of study</label>
+
+        <input type="text" id="course" placeholder="Enter course">
+
+        <button onclick="submitData()">Submit</button>
+
+        <div id="response" class="response">
+            <h2 id="fullnameD"></h2> -->
+        <!-- <h3 id="ageD"></h3>
+            <h3 id="courseD"></h3>
+
+        </div>
+        <h2 id="fixed"></h2>
+    </div> -->
+
+
+        <label for="fullname">Fullname</label>
+        <input type="text" id="fullname" placeholder="Enter full name">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter Age">
+        <button onclick="submitform()">Submit</button>
+
+        <div id="form"></div>
+
+        <label for="firstname">Fullname</label>
+        <input type="text" id="firstname" placeholder="Enter firstname">
+        <label for="lastname">lastname</label>
+        <input type="text" id="lastname" placeholder="Enter last name">
+        <label for="age">age</label>
+        <input type="number" id="age" placeholder="Enter age">
+        <label for="course">course</label>
+        <input type="text" id="course" placeholder="Enter course">
+        <label for="assesment">assesment</label>
+        <input type="number" id="assesment" placeholder="Enter assesment">
+        <label for="project">project</label>
+        <input type="number" id="project" placeholder="Enter project">
+        <label for="exam">Exam score</label>
+        <input type="text" id="exam" placeholder="Enter Exam score">
+        <button onclick="submitD()">Submit</button>
+
+<img src="../Image/aston villa.png" alt="">
+        <div id="display1">
+
+            <h2 id="fname"></h2>
+            <!-- <h3 id="dage"></h3>
+            <h3 id="dcourse"></h3>
+            <h4 id="dproject"></h4>
+            <h4 id="asses"></h4>
+            <h4 id="dexam"></h4> -->
+            <h5 id="dtotal"></h5>
+        </div>
+
+        <h1 id="demo"></h1>
+
+        <button id="btn"></button>
+        <button onclick="document.getElementById('demo').innerHTML = Date()">The time is</button>
+
+
+        <input type="text" id="newinput" placeholder="Type somethhing...." />
+
+        <h2 id="loop2"></h2>
+
+        <h1 id="box"></h1>
+
+        <div id="color-container">
+            <h1 id="colors">Color Disco </h1>
+        </div>
+
+
+        <script src="./demo.js"></script>
+
+
+        <script>
+            let glass = document.querySelector('.glass');
+
+            function bulbOn() {
+                glass.classList.add('bulbOn');
+                glass.classList.remove('glass');
+                document.querySelector('body').style.background = 'rgba(185, 153, 11, 0.61)';
+            }
+            function bulboff() {
+                glass.classList.remove('bulbOn');
+                glass.classList.add('glass');
+                document.querySelector('body').style.background = 'black'
+
+            }
+
+
+            // document.write(67 - 5 + 10 * 8)
+
+            // window.alert(5 + 6);
+            // console.log('hello')
+            //rename
+            function rename() {
+                document.getElementById('demo').innerHTML = 'Goodmorning Javascript <span style="color: yellow;"> HOW ARE YOU </span > ';
+
+                document.getElementById('img').src = "../Image/best.jpg";
+                document.getElementById('demo').style.display = 'none';
+            }
+            function name2() {
+                document.getElementById('demo').style.display = 'block';
+            }
+
+            // Var
+            var message;
+
+            vare();
+            function vare() {
+                message = 'hello world';
+                console.log(message)
+            }
+            console.log(message)
+
+            var x = 10;
+            console.log(x)
+
+            var x = 20;
+            console.log(x)
+
+            x = 30;
+            console.log(x)
+
+            //let
+
+
+            let y = 10;
+            console.log(y)
+            y = 20
+            console.log(y)
+            function vare2() {
+                let
+            }
+            if (true) {
+                let z = 100;
+                console.log(z);
+            }
+
+
+
+        </script>
+</body>
+<h2 id="dgrade"></h2>
+<h2 id="dremark"></h2>
+
+
+
+</html>

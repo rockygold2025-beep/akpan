@@ -1,0 +1,34 @@
+{
+    "Clubs": [
+        {
+            "clubs": "Manchester United",
+            "manager": "Michael carrick",
+            "src": "../../Image/manchesterlogo.jpg",
+            "founded": "1906"
+        },
+        {
+            "clubs": "Chelsea ",
+            "manager": "Liam Roseinior",
+            "src": "../../Image/Chelsea-Logo.png",
+            "founded": "1990"
+        },
+        {
+            "clubs": "Real Madrid ",
+            "manager": "Alvaro Arbeloa",
+            "src": "../../Image/real-madrid.png",
+            "founded": "1906"
+        },
+        {
+            "clubs": "Tottenham ",
+            "manager": "Igor Tudor",
+            "src": "../../Image/tottenham.jpg",
+            "founded": "1906"
+        },
+        {
+            "clubs": "Arsenal ",
+            "manager": "Mikel Arteta",
+            "src": "../../Image/Arsenal-Logo.png",
+            "founded": "1906"
+        }
+    ]
+}
