@@ -2,424 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport News - Your Daily Sports Hub</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../HTML/styly.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=, initial-scale=1.0">
+   <title>self project</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      #headsection :hover {
+         align-items: center;
+         background-color: rgba(128, 128, 128, 0.151);
+      }
+
+      #headsection {
+         background-color: black;
+         list-style-type: none;
+         display: flex;
+         justify-content: right;
+         margin-top: 0px;
+         height: 60px;
+         padding: 10px;
+         position: sticky;
+         color: white;
+
+      }
+
+      #headsection {
+         justify-content: space-evenly;
+         font-size: 30px;
+         text-decoration: none;
+      }
+
+      #headsection a {
+         text-decoration: none;
+      }
+
+      li {
+         padding-top: 10px;
+         color: white;
+      }
+   </style>
 </head>
 
-<body>
+<body 
+   <div>
+      <ul id="headsection">
+         <a href="./index.html">
+            <li>Home</li>,
+         </a>
+         <a href="./contact.html">
+            <li>Contact</li>
+         </a>
+         <a href="../HTML/services.html">
+            <li>Services</li>
+         </a>
+         <a href="./about.html">
+            <li>About Us</li>
+         </a>
+         <!-- <p>2025 edition</p> -->
+         <!-- <img src="../Image/merce.jpg" height="49px"> -->
 
-    <div id="main-wrapper">
-        <div class="live-ticker">
-            <div class="ticker-label">⚡ LIVE</div>
-            <div class="ticker-wrap">
-                <div class="ticker-move">
-                    <span class="ticker-item">🏀 Lakers 98 - 102 Warriors</span>
-                    <span class="ticker-item">⚽ Man Utd 2 - 1 Liverpool</span>
-                    <span class="ticker-item">🏈 Chiefs 21 - 17 Bills</span>
-                    <span class="ticker-item">🎾 Nadal 2-0 Medvedev</span>
-                    <span class="ticker-item">🏏 India 180/5 (20 ov)</span>
-                    <span class="ticker-item">🏒 Rangers 3 - 2 Bruins</span>
-                </div>
-            </div>
-        </div>
-        <!-- Navigation -->
-        <ul class="nav-bar">
-            <li class="brand">Sport News</li>
-            <li style="font-weight: bold;"><a href="">Home</a></li>
-            <li><a href="#invisible1">Category</a></li>
-            <li><a href="#invisible2">Trending News</a></li>
-            <li><a href="#invisible3">Recent News</a></li>
-            <li><a href="#invisible3">Livescore</a></li>
-            <li class="theme-switch-wrapper">
-                <label class="theme-switch" for="darkmode-toggle">
-                    <input type="checkbox" id="darkmode-toggle">
-                    <span class="slider round">
-                        <i class="fa fa-sun-o sun-icon"></i>
-                        <i class="fa fa-moon-o moon-icon"></i>
-                    </span>
-                </label>
-            </li>
-            <!-- Sign Up Button (dynamically replaced by avatar when logged in) -->
-            <li><button class="signup-button" id="signupBtn"><i class="fa fa-user-plus"></i> Sign Up</button></li>
-            <button class="search-button">
-                <i class="fa fa-search"></i> search
-            </button>
-        </ul>
-
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <img src="../Image/main ball3.png" alt="" class="heroball">
-            <div class="hero-title">
-                <h1 id="hero-headline">
-                    <span class="title-word  word1">TOP </span> <br>
-                    <span class="title-word word2">SCORER TO </span> <br>
-                    <span class="title-word word3">THE FINAL</span> <br>
-                    <span class="title-word  word4">MATCH </span>
-                </h1>
-            </div>
-            <div class="hero-overlay">
-                <img src="../Image/basketball player.png" alt="" class="hero-basketball-img">
-                <div class="hero-text-box">
-                    <p>
-                        The EuroLeague finals Top scorer is <br>
-                        the individual award for the player <br>
-                        that scored the highest points <br>
-                        in the EuroLeague Finals
-                    </p>
-                    <button class="read-more-btn"><a href="#sports-articles" class="read-more-link">CONTINUE
-                            READING</a></button>
-                </div>
-            </div>
-            <p id="invisible1"></p>
-            <div class="side-articles">
-                <div class="side-articles-img1">
-                    <img src="../Image/relome.png" alt="" class="side-article-img">
-                </div>
-                <p class="font"> Ethiopian sprinter took the <br> highest points</p>
-                <div class="side-articles-img2">
-                    <img src="../Image/selome.png" alt="" class="side-article-img">
-                </div>
-                <p class="font">Fill Vettel Dominates in <br> spectacular</p>
-            </div>
-        </div>
-
-        <!-- Category Section -->
-        <h2 id="category-heading">Category</h2>
-        <div class="category-grid reveal-up">
-            <div>
-                <div class="flabel">
-                    <h3 class="football-label">FOOTBALL</h3>
-                </div>
-                <div class="fbal-Container">
-                    <img src="../Image/fbal.jpg" alt="" class="football-img">
-                </div>
-            </div>
-            <div>
-                <div class="basktcontainer">
-                    <img src="../Image/baskball.jpg" alt="" class="basketball-img">
-                </div>
-                <div class="bbal-label-container">
-                    <h3 class="basketball-label">BASKET <br><span style="margin-left:15px;">BALL</span></h3>
-                </div>
-            </div>
-            <div>
-                <div class="tcarblowup">
-                    <h3 class="car-label">CAR SPORT</h3>
-                </div>
-                <div class="carblowup">
-                    <img src="../Image/car.jpg" alt="" class="car-img">
-                </div>
-            </div>
-            <div>
-                <div class="tennis-blowup">
-                    <img src="../Image/tableten.jpg" alt="" class="tennis-img">
-                </div>
-                <div class="tlabel-blowup">
-                    <h3 class="tennis-label">TABLE <br> <span>TENNIS</span></h3>
-                </div>
-            </div>
-        </div>
-        <p id="invisible2"></p>
-        <!-- Trending Section -->
-        <div class="trending-section  reveal-up" id="trending-section">
-            <h2 class="trending-title">Trending News</h2>
-            <div>
-                <div class="trending-item">
-                    <img src="../Image/best.jpg" alt="" class="trending-img">
-                    <p class="trending-meta">Race98-03 june 2023 <br><br>
-                        <span class="trending-headline">6 year old horse dies at <br> Belmont park After Race
-                            Injury</span><br>
-                        <span class="trending-desc">NEW YORK-A 6-year-old horse died after <br> being injured in a race
-                            at belmont park <br> ahead of next week's</span>
-                    </p>
-                </div><br>
-                <div class="trending-item">
-                    <img src="../Image/awesome.jpg" alt="" class="trending-img">
-                    <p class="trending-meta">Jony-Ls- 03 june 2023 <br><br>
-                        <span class="trending-headline">Savilia Blunk Embraces Longer <br> season With World
-                            cup</span><br>
-                        <span class="trending-desc">last year, savilia blunk took a more <br> conservative approach to
-                            her first season <br> as an elite class athlete, skipping some</span>
-                    </p>
-                </div><br>
-                <div class="trending-item">
-                    <img src="../Image/perfect.jpg" alt="" class="trending-img">
-                    <p class="trending-meta">King-f -03 june 2023 <br><br>
-                        <span class="trending-headline">Ryan Garcia is fighting again,<br> this time on social
-                            media</span><br>
-                        <span class="trending-desc">Boxing star Ryan Garcia and his promoter <br> hall of fame fighter
-                            Oscar De La Hoya <br> ,reignited their wars of words via twitter on</span>
-                    </p>
-                </div>
-                <div class="trending-featured">
-                    <img src="../Image/original.jpg" alt="" class="featured-img">
-                </div>
-            </div>
-        </div>
-
-        <!-- Slider -->
-        <div class="slider-wrapper">
-            <div class="slider-container" id="slider-container"></div>
-        </div>
-        <div class="slider-dots" id="slider-dots"></div>
-    </div>
-    <p id="invisible3"></p>
-    <!-- Recent News Section -->
-    <div class="recent-section box reveal-up" id="recent-section">
-        <div>
-            <h2 class="recent-title">Recent News <span class="club-rank-title">Clubs Ranking</span></h2>
-            <div class="fnews-img-container">
-                <img src="../Image/baku.jpg" alt="" class="featured-news-img" id="baku-img">
-            </div>
-            <div id="sports-articles-container">
-                <h2 class="sports-articles-title" id="sports-articles">Sport Articles</h2>
-            </div>
-        </div>
-
-        <div class="news-sidebar">
-            <div class="news-item  item1">
-                <div class="news-thumb-Container">
-                    <img src="../Image/party.jpg" alt="" class="news-thumb">
-                </div>
-                <p class="news-title-sm"><span class="news-meta">#pollar.87 - 12 july 2023</span> <br> Baku 2023
-                    Taekwondo <br> championships</p>
-            </div>
-            <div class="news-item">
-                <img src="../Image/kl.jpg" alt="" class="news-thumb">
-                <p class="news-title-sm"><span class="news-meta">#Goft. Toni- 20 july 2023</span> <br> Open championship
-                    Royal Liverpool Golf</p>
-            </div>
-            <div class="news-item">
-                <img src="../Image/josh.jpg" alt="" class="news-thumb">
-                <p class="news-title-sm"><span class="news-meta">#cricket. Toni -27 july 2023</span> <br> Ireland Tour
-                    of England <br> Test 2023</p>
-            </div>
-            <a href="https://www.espn.com/" target="_blank" rel="noopener" class="more-btn"> More <i
-                    class="fa fa-arrow-right"></i></a>
-        </div>
-
-        <div class="rankings-table">
-            <table class="league-table">
-                <tr>
-                    <th class="club-cell">Club</th>
-                    <th>GP</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>F</th>
-                    <th>A</th>
-                    <th>GD</th>
-                </tr>
-                <tr>
-                    <td class="club-cell"><span>1</span><img src="../Image/arsenal.png"
-                            class="club-icon"><span>Arsenal</span></td>
-                    <td>11</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>20</td>
-                    <td>5</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td class="club-cell"><span>2</span><img src="../IMAGE/mancity.png"
-                            class="club-icon"><span>manchester city</span></td>
-                    <td>11</td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>23</td>
-                    <td>8</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td class="club-cell"><span>3</span><img src="../Image/chelsea.png"
-                            class="club-icon"><span>chelsea</span></td>
-                    <td>11</td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>21</td>
-                    <td>11</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td class="club-cell"><span>4</span><img src="../IMAGE/sunny.png"
-                            class="club-icon"><span>sunderland</span></td>
-                    <td>19</td>
-                    <td>11</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>21</td>
-                    <td>11</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td class="club-cell"><span>5</span><img src="../Image/totenham x.png"
-                            class="club-icon"><span>tottenham</span></td>
-                    <td>18</td>
-                    <td>11</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>19</td>
-                    <td>10</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td class="club-cell"><span>6</span><img src="../IMAGE/aston villa.png"
-                            class="club-icon"><span>Aston villa</span></td>
-                    <td>18</td>
-                    <td>11</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>19</td>
-                    <td>10</td>
-                    <td>9</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <!-- Articles Section -->
-    <div class="articles-section  reveal-up" id="articles-section">
-        <div class="article-card">
-            <div class="first">
-                <img src="../Image/firstbas.jpg" alt="" class="article-main-img">
-            </div>
-            <div class="author-info">
-                <img src="../Image/firstguy.jpg" alt="" class="author-avatar">
-                <span class="author-name">Jake Will</span>
-            </div>
-            <p class="article-date">04 june 2023</p>
-            <p class="article-title">5 Exercise Basketball Players Should <br> Be Using To Develop strength</p>
-            <p class="article-excerpt">This article was written by jake willhoite from <br> healthlisted.com
-                strength in basketball isn't all <br> about massive body mass or ripped muscles.</p>
-            <div class="nav-arrow-left">
-                <i class="fa fa-chevron-left"></i>
-            </div>
-            <div class="nav-arrow-right">
-                <i class="fa fa-chevron-right "></i>
-            </div>
-        </div>
-
-        <div class="article-card middle-article">
-            <div class="second">
-                <img src="../Image/hockey-players 1.png" alt="" class="middle-img">
-            </div>
-            <img src="../Image/secondguy.jpg" alt="" class="middle-author-avatar">
-            <div class="middle-author-name">FOXI.ZACON</div>
-            <div class="middle-content">
-                <p class="article-date">03 june 2023</p>
-                <p class="article-title">Golden Knights Out to fulfill owner's <br> quest to win stanley cup in 6th
-                    year</p>
-                <p class="article-excerpt">The Vegas Golden Knights will play the Florida <br> panthers in the
-                    stanley Cup Final beginning <br> saturday</p>
-            </div>
-        </div>
-
-        <div class="article-card right-article">
-            <div class="third">
-                <img src="../Image/coned.png" alt="" class="right-img">
-            </div>
-            <img src="../Image/thirdguy.jpg" alt="" class="right-author-avatar">
-            <span class="right-author-name">BONG LOZADA</span>
-            <div class="right-content">
-                <p class="article-date">01 June 2023</p>
-                <p class="article-title">'Outdoor' Badminton Gets support <br> From Local federation</p>
-                <p class="article-excerpt">The Badminton World Federation is developing <br> Air Badminton and the
-                    country's governing <br> body, Philippine Badminton association.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Social Section -->
-    <div class="social-section box reveal-up">
-        <img src="../Image/nicewon3.png" alt="" class="main-banner">
-        <div>
-            <img src="../Image/LEFTrows.jpg" alt="" class="pagination-left">
-            <div class="page-numbers">
-                <span class="pagy active page1">1</span>
-                <span class="page-num page2">2</span>
-                <span class="page-num page3">3</span>
-                <span class="page-num page4">4</span>
-            </div>
-            <img src="../Image/arrow.jpg" alt="" class="pagination-right">
-            <div class="social-icons">
-                <img src="../Image/facebook.png" alt="" class="social-icon social1">
-                <img src="../Image/instagram.png" alt="" class="social-icon social2">
-                <img src="../Image/twitter.png" alt="" class="social-icon social3">
-            </div>
-        </div>
-    </div>
-
-    <!-- Search Overlay -->
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-overlay-content">
-            <span class="close-search">&times;</span>
-            <div class="search-box">
-                <i class="fa fa-search"></i>
-                <input type="text" id="overlay-search-input" placeholder="Search news, scores, articles..."
-                    autocomplete="off">
-            </div>
-        </div>
-    </div>
-
-    <!-- Auth Overlay (Sign Up / Log In) -->
-    <div id="auth-overlay" class="auth-overlay">
-        <div class="auth-overlay-content">
-            <span class="close-auth">&times;</span>
-            <!-- Sign Up Form -->
-            <div id="signup-form" class="auth-form active">
-                <h2>Create an Account</h2>
-                <form id="signup-form-fields">
-                    <div class="form-group">
-                        <label for="signup-name"><i class="fa fa-user"></i> Full Name</label>
-                        <input type="text" id="signup-name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signup-email"><i class="fa fa-envelope"></i> Email</label>
-                        <input type="email" id="signup-email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signup-password"><i class="fa fa-lock"></i> Password</label>
-                        <input type="password" id="signup-password" placeholder="••••••••" required>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="terms" required>
-                        <label for="terms">I accept the <a href="#" id="terms-link">Terms and Conditions</a></label>
-                    </div>
-                    <button type="submit" class="auth-submit">Sign Up</button>
-                </form>
-                <p class="toggle-link">Already have an account? <a href="#" id="show-login">Log in</a></p>
-            </div>
-            <!-- Log In Form (with in‑form success message) -->
-            <div id="login-form" class="auth-form">
-                <h2>Welcome Back</h2>
-                <form id="login-form-fields">
-                    <!-- The success message will be inserted here dynamically -->
-                    <div id="login-success-msg" class="login-success-msg" style="display: none;"></div>
-                    <div class="form-group">
-                        <label for="login-name"><i class="fa fa-user"></i> Full Name</label>
-                        <input type="text" id="login-name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="login-email"><i class="fa fa-envelope"></i> Email</label>
-                        <input type="email" id="login-email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="login-password"><i class="fa fa-lock"></i> Password</label>
-                        <input type="password" id="login-password" placeholder="••••••••" required>
-                    </div>
-                    <button type="submit" class="auth-submit">Log In</button>
-                </form>
-                <p class="toggle-link">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
-            </div>
-        </div>
-    </div>
-    <button id="backToTop" title="Go to top">↑</button>
-
-    <script src="../HTML/project.js"></script>
+         <button style="height: 40px; margin-top: 10px;width: 100px;border: 1px solid transparent;
+                  background-color: green;border-radius: 12px; box-shadow: 1px 1px 3px 4px green;  
+                   box-shadow: 0px 2px 8px 4px green, 0px 2px 8px 4px rgba(0, 0, 0, 0.473)
+" onclick="alert('fineboy')" ;>
+            search
+         </button>
+      </ul>
+   </div>
+   <div style="display: flex;">
+      <h1 style="color: white;font-size: 70px;padding-left: 80px;margin-top: 130px;"><span style="margin-left:100px ;">I
+            AM </span> <br><span style="color: RED;">goodluck </span><span style="color: blue;">akpan </span> </h1>
+      <!-- <div style="height: 50px;"><img src="../Image/devo.png" alt="LUKY DEV" height="400px" -->
+      <!-- style="border-radius: 40%;width: 350px;position: absolute;top: 100px;right: 60px;"></div> -->
+   </div>
+   </div>
+   <script>
+      alert('i am lucky dev');
+   </script>
 </body>
+
 </html>
